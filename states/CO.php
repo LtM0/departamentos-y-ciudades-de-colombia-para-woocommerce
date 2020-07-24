@@ -10,6 +10,19 @@
 global $states;
 
 $states ['CO' ] = array (
+	);
+
+/**
+ * Colombia states
+ *
+ * @author   Saul Morales Pacheco <moralespachecopablo@gmail.com>
+ * @version  1.1.26
+ * @license http://opensource.org/licenses/gpl-license.php GNU Public License
+ */
+
+global $states;
+
+$states ['CO' ] = array (
 	'AMZ' => 'Amazonas',
 	'ANT' => 'Antioquia',
 	'ARU' => 'Arauca',
