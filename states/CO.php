@@ -1,9 +1,9 @@
 <?php
 /**
- * Colombia states
+ * Chile states
  *
- * @author   Saul Morales Pacheco <moralespachecopablo@gmail.com>
- * @version  1.1.26
+ * @author   Luuk Gremmen <luukgremmen@gmail.com>
+ * @version  0.0.1
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
