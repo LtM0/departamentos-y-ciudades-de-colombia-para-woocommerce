@@ -9,7 +9,8 @@
 
 global $states;
 
-$states ['CO' ] = array (
+$states ['CL' ] = array (
+	'RM' => 'Metropolitana de Santiago'
 	);
 
 /**
