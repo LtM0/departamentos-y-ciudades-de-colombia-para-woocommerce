@@ -28,7 +28,7 @@ function states_places_chile_smp_notices($classes, $notice){
 }
 
 function states_places_chile_init(){
-    load_plugin_textdomain('departamentos-y-ciudades-de-chile-para-woocommerce',
+    load_plugin_textdomain('regiones-y-comunas-de-chile-para-woocommerce',
         FALSE, dirname(plugin_basename(__FILE__)) . '/languages');
 
     /**
