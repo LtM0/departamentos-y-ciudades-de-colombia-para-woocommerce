@@ -1,9 +1,9 @@
 <?php
 
-class WC_States_Places_Colombia
+class WC_States_Places_Chile
 {
 
-const VERSION = '1.1.27';
+const VERSION = '0.0.1';
 private static $places;
 
 /**
