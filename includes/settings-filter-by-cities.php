@@ -13,9 +13,9 @@ $cost_desc = __( 'Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</cod
 
 $settings =  array(
     'single_method' => array(
-        'title' 		=> __( 'Single method', 'departamentos-y-ciudades-de-colombia-para-woocommerce' ),
+        'title' 		=> __( 'Single method', 'regiones-y-comunas-de-chile-para-woocommerce' ),
         'type' 			=> 'select',
-        'description' 	=> __( 'When doing single shipping method, it eliminates all others and imposes its own rules', 'departamentos-y-ciudades-de-colombia-para-woocommerce' ),
+        'description' 	=> __( 'When doing single shipping method, it eliminates all others and imposes its own rules', 'regiones-y-comunas-de-chile-para-woocommerce' ),
         'class'         => 'wc-enhanced-select',
         'default' 		=> 'yes',
         'desc_tip'		=> true,
@@ -43,17 +43,17 @@ $settings =  array(
         )
     ),
     'cost' => array(
-        'title' => __('Coste', 'departamentos-y-ciudades-de-colombia-para-woocommerce'),
+        'title' => __('Coste', 'regiones-y-comunas-de-chile-para-woocommerce'),
         'type' 			=> 'text',
         'description' 	=> $cost_desc,
         'default'		=> '0',
         'desc_tip'		=> true
     ),
     'cities' => array(
-        'title' => __('Cities','departamentos-y-ciudades-de-colombia-para-woocommerce'),
+        'title' => __('Cities','regiones-y-comunas-de-chile-para-woocommerce'),
         'type' => 'multiselect',
         'class'       => 'wc-enhanced-select',
-        'description' => __( 'Select the city referring to the region that you have previously added', 'departamentos-y-ciudades-de-colombia-para-woocommerce' ),
+        'description' => __( 'Select the city referring to the region that you have previously added', 'regiones-y-comunas-de-chile-para-woocommerce' ),
         'options' => $this->showCitiesRegions(),
         'desc_tip'    => true,
     )
