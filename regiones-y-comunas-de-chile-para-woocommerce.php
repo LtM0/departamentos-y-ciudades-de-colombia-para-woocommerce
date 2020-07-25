@@ -3,8 +3,8 @@
  * Plugin Name: Regiones y Comunas de Chile para Woocommerce
  * Description: Plugin modificado con los Regiones y Comunas de Chile
  * Version: 0.0.1
- * Author: Saul Morales Pacheco
- * Author URI: https://saulmoralespa.com
+ * Author: LtM0
+ * Author URI: https://freshyco.cl/
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: departamentos-y-ciudades-de-colombia-para-woocommerce
