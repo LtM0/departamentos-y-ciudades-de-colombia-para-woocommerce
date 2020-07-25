@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Departamentos y Ciudades de Colombia para Woocommerce
- * Description: Plugin modificado con los departementos y ciudades de Colombia
- * Version: 1.1.27
+ * Plugin Name: Regiones y Comunas de Chile para Woocommerce
+ * Description: Plugin modificado con los Regiones y Comunas de Chile
+ * Version: 0.0.1
  * Author: Saul Morales Pacheco
  * Author URI: https://saulmoralespa.com
  * License: GNU General Public License v3.0
@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-add_action('plugins_loaded','states_places_colombia_init',1);
+add_action('plugins_loaded','states_places_chile_init',1);
 
-function states_places_colombia_smp_notices($classes, $notice){
+function states_places_chile_smp_notices($classes, $notice){
     ?>
     <div class="<?php echo $classes; ?>">
         <p><?php echo $notice; ?></p>
@@ -27,8 +27,8 @@ function states_places_colombia_smp_notices($classes, $notice){
     <?php
 }
 
-function states_places_colombia_init(){
-    load_plugin_textdomain('departamentos-y-ciudades-de-colombia-para-woocommerce',
+function states_places_chile_init(){
+    load_plugin_textdomain('departamentos-y-ciudades-de-chile-para-woocommerce',
         FALSE, dirname(plugin_basename(__FILE__)) . '/languages');
 
     /**
@@ -40,7 +40,7 @@ function states_places_colombia_init(){
         /**
          * Instantiate class
          */
-        $GLOBALS['wc_states_places'] = new WC_States_Places_Colombia(__FILE__);
+        $GLOBALS['wc_states_places'] = new WC_States_Places_chile(__FILE__);
 
 
         require_once ('includes/filter-by-cities.php');
@@ -54,19 +54,7 @@ function states_places_colombia_init(){
 
         add_action( 'woocommerce_shipping_init', 'filters_by_cities_method' );
 
-        $subs = __( '<strong>Te gustaria conectar tu tienda con las principales transportadoras del país ?.
-        Sé uno de los primeros</strong> ', 'departamentos-y-ciudades-de-colombia-para-woocommerce' ) .
-            sprintf(__('%s', 'departamentos-y-ciudades-de-colombia-para-woocommerce' ),
-                '<a class="button button-primary" href="https://saulmoralespa.com/shipping-colombia.php">' .
-                __('Suscribete Gratis', 'departamentos-y-ciudades-de-colombia-para-woocommerce') . '</a>' );
-
         global $pagenow;
-
-        if ( is_admin() && 'plugins.php' == $pagenow && !defined( 'DOING_AJAX' ) ) {
-            add_action('admin_notices', function() use($subs) {
-                states_places_colombia_smp_notices('notice notice-info is-dismissible', $subs);
-            });
-        }
 
     }
 }
