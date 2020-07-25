@@ -25,8 +25,8 @@ function filters_by_cities_method() {
 
                 $this->id                 = 'filters_by_cities_shipping_method';
                 $this->instance_id				= absint( $instance_id );
-                $this->method_title       = __( 'Shipping filter By Cities', 'departamentos-y-ciudades-de-chile-para-woocommerce' );
-                $this->method_description = __( 'Allows adding rules by city', 'departamentos-y-ciudades-de-chile-para-woocommerce' );
+                $this->method_title       = __( 'Shipping filter By Cities', 'regiones-y-comunas-de-chile-para-woocommerce' );
+                $this->method_description = __( 'Allows adding rules by city', 'regiones-y-comunas-de-chile-para-woocommerce' );
 
                 $this->supports = array(
                     'settings',
@@ -145,7 +145,7 @@ function filters_by_cities_method() {
                         }
 
                         $logger = new WC_Logger();
-                        $logger->add('departamento-ciudades', print_r($class_cost, true));
+                        $logger->add('region-comunas', print_r($class_cost, true));
                     }
                     if ( 'order' === $this->type && $highest_class_cost ) {
                         $rate['cost'] += $highest_class_cost;
