@@ -25,8 +25,8 @@ function filters_by_cities_method() {
 
                 $this->id                 = 'filters_by_cities_shipping_method';
                 $this->instance_id				= absint( $instance_id );
-                $this->method_title       = __( 'Shipping filter By Cities', 'departamentos-y-ciudades-de-colombia-para-woocommerce' );
-                $this->method_description = __( 'Allows adding rules by city', 'departamentos-y-ciudades-de-colombia-para-woocommerce' );
+                $this->method_title       = __( 'Shipping filter By Cities', 'departamentos-y-ciudades-de-chile-para-woocommerce' );
+                $this->method_description = __( 'Allows adding rules by city', 'departamentos-y-ciudades-de-chile-para-woocommerce' );
 
                 $this->supports = array(
                     'settings',
@@ -191,7 +191,7 @@ function filters_by_cities_method() {
                 foreach ($zones as $zone){
                     if (strpos($zone->code, ':') !== false){
                         $place = explode(':', $zone->code );
-                        $states = WC_States_Places_Colombia::get_places( $place[0] );
+                        $states = WC_States_Places_Chile::get_places( $place[0] );
                         $cities =  array_merge($cities,$this->orderArray($states[$place[1]]));
                     }
                 }
