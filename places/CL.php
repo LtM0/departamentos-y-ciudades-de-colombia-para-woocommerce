@@ -18,5 +18,6 @@ $places['CL'] = array(
         "Ñuñoa",
         "Piedra Roja, Colina",
         "Providencia",
+	"Vitacura",
 		),
 	);
